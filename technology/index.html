@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Technology — Alienonyx</title>
-<meta name="description" content="Analog compute-in-memory performs multiply-accumulate in place, delivering substantial energy savings for on-device AI inference.">
+<meta name="description" content="SiGe BiCMOS at 4 K, a characterization-first design method, and open-shuttle economics — from lab demonstration to merchant part.">
 <style>
 :root{--bg:#0b0e14;--panel:#121722;--text:#e6e8ec;--muted:#9aa4b2;--accent:#4fd1c5;--border:#232b3a;}
 *{box-sizing:border-box;}
@@ -22,13 +22,15 @@ main{padding:56px 0;}
 h1{font-size:2.2rem;line-height:1.2;margin:0 0 14px;}
 h2{font-size:1.4rem;margin:40px 0 12px;}
 .lede{font-size:1.18rem;color:var(--muted);max-width:44rem;}
-ul.feat{list-style:none;padding:0;margin:16px 0 0;}
-ul.feat li{padding:14px 0;border-bottom:1px solid var(--border);}
-ul.feat li:last-child{border-bottom:none;}
-ul.feat li b{color:var(--text);}
-.patent{color:var(--muted);font-style:italic;margin-top:24px;}
+.hero{padding:40px 0 8px;}
+.hero h1{font-size:2.7rem;max-width:20ch;background:linear-gradient(180deg,#fff,#b9c2cf);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.btn{display:inline-block;margin-top:26px;background:var(--accent);color:#06231f;font-weight:600;padding:12px 24px;border-radius:8px;}
+.btn:hover{text-decoration:none;filter:brightness(1.08);}
+ul.feat{padding-left:1.2rem;}
+ul.feat li{margin:10px 0;}
+.note{color:var(--muted);font-style:italic;}
 footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:28px 0;margin-top:48px;}
-@media(max-width:560px){h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
+@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
 </style>
 </head>
 <body>
@@ -44,23 +46,29 @@ footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9re
 </div></header>
 
 <main><div class="wrap">
-  <h1>Compute where the data lives</h1>
-  <p>Conventional AI accelerators spend most of their energy shuttling data between memory and
-  arithmetic units. <b>Analog compute-in-memory (CIM)</b> performs the multiply-accumulate
-  operation in place, removing that movement and delivering substantial energy savings for
-  inference workloads.</p>
-
-  <h2>What we design for</h2>
+  <h1>From lab demonstration to merchant part</h1>
+  <p class="lede">Integrated cryogenic readout is no longer speculative — national-laboratory
+  research ASICs have demonstrated multi-channel amplification, discrimination, and picosecond
+  time-tagging at 4&nbsp;K. What does not exist is a commercial part: documented, supported,
+  purchasable. A lab program doesn&rsquo;t productize, warrant, or support silicon. That gap is our
+  product.</p>
+  <h2>What we build on</h2>
   <ul class="feat">
-    <li><b>High energy efficiency</b> — computation in the analog domain, minimal data movement.</li>
-    <li><b>Small silicon area</b> — dense, memory-centric arrays.</li>
-    <li><b>Inference-grade accuracy</b> — engineered for the precision neural-network inference actually needs.</li>
-    <li><b>Standard-process compatibility</b> — prototyped on a commercial 130&nbsp;nm SiGe BiCMOS process (IHP&nbsp;SG13G2) using a modern open-source silicon design flow.</li>
+    <li><strong>SiGe BiCMOS at cryogenic temperatures</strong> — bipolar front-ends are proven at
+    4&nbsp;K in the published record, and the devices <em>improve</em> cold: current gain rises
+    several-fold and transit frequencies climb toward half a terahertz. For low-noise analog at
+    4&nbsp;K, SiGe is the native technology.</li>
+    <li><strong>A characterization-first design method</strong> — no production cryogenic PDK exists,
+    on any process. We design against published cryogenic device data and our own cryo test
+    structures, with on-chip trim absorbing residual model error.</li>
+    <li><strong>Open-shuttle economics</strong> — our silicon iterates on IHP&rsquo;s 130&nbsp;nm
+    SiGe:C BiCMOS open process at a cost structure sized for scientific and quantum-industry volumes.
+    Hundreds to low thousands of units per year is a healthy business for us — not a rounding error
+    below someone&rsquo;s minimum order.</li>
   </ul>
-
-  <p class="patent">Alienonyx's core compute-in-memory architecture is patent-pending.</p>
+  <p class="note">Alienonyx&rsquo;s readout techniques are patent-pending.</p>
 </div></main>
 
-<footer class="site"><div class="wrap">© 2026 Alienonyx — Energy-efficient compute-in-memory silicon for edge AI · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
+<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
 </body>
 </html>

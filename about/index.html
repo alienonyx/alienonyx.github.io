@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About — Alienonyx</title>
-<meta name="description" content="Alienonyx is a fabless semiconductor startup developing analog compute-in-memory accelerators for energy-efficient edge AI inference.">
+<meta name="description" content="Alienonyx, Inc. is a fabless semiconductor company developing cryogenic analog and mixed-signal ASICs, founded by Ali Al-Shamma.">
 <style>
 :root{--bg:#0b0e14;--panel:#121722;--text:#e6e8ec;--muted:#9aa4b2;--accent:#4fd1c5;--border:#232b3a;}
 *{box-sizing:border-box;}
@@ -20,10 +20,17 @@ nav.top a{color:var(--muted);margin-left:20px;font-size:.95rem;}
 nav.top a:hover,nav.top a[aria-current="page"]{color:var(--text);text-decoration:none;}
 main{padding:56px 0;}
 h1{font-size:2.2rem;line-height:1.2;margin:0 0 14px;}
-h2{font-size:1.35rem;margin:0 0 12px;}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:24px 26px;margin-top:28px;}
+h2{font-size:1.4rem;margin:40px 0 12px;}
+.lede{font-size:1.18rem;color:var(--muted);max-width:44rem;}
+.hero{padding:40px 0 8px;}
+.hero h1{font-size:2.7rem;max-width:20ch;background:linear-gradient(180deg,#fff,#b9c2cf);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.btn{display:inline-block;margin-top:26px;background:var(--accent);color:#06231f;font-weight:600;padding:12px 24px;border-radius:8px;}
+.btn:hover{text-decoration:none;filter:brightness(1.08);}
+ul.feat{padding-left:1.2rem;}
+ul.feat li{margin:10px 0;}
+.note{color:var(--muted);font-style:italic;}
 footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:28px 0;margin-top:48px;}
-@media(max-width:560px){h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
+@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
 </style>
 </head>
 <body>
@@ -40,25 +47,24 @@ footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9re
 
 <main><div class="wrap">
   <h1>About Alienonyx</h1>
-  <p>Alienonyx is a fabless semiconductor startup developing analog compute-in-memory accelerators
-  for energy-efficient AI inference at the edge. We pair deep memory-circuit and mixed-signal
-  design experience with a modern, open-source silicon design flow to bring in-memory computing
-  from research into manufacturable silicon.</p>
-
-  <div class="card">
-    <h2>Founder</h2>
-    <p>Alienonyx was founded by <b>Ali Al-Shamma</b>, an analog and mixed-signal integrated-circuit
-    designer with nearly three decades of experience across the memory and semiconductor industry —
-    including senior design roles at <b>Intel, Western Digital, SanDisk, AMD, and Matrix
-    Semiconductor</b>. His work spans compute-in-memory and neuromorphic circuit design, sense
-    amplifiers, data converters, and on-chip power and clock generation, and he has led
-    <b>test-chip IP design and first-silicon bring-up</b>. He is a named inventor on
-    <b>30+ U.S. patents</b> in memory and mixed-signal design, has published at <b>ISSCC</b>, and
-    holds an <b>MSc and BSc in Electrical Engineering from Santa Clara University</b>. Alienonyx's
-    compute-in-memory architecture is <b>new and independently developed, and patent-pending</b>.</p>
-  </div>
+  <p class="lede">Alienonyx, Inc. is a fabless semiconductor company developing cryogenic analog and
+  mixed-signal ASICs, beginning with integrated readout for superconducting single-photon detector
+  arrays. We pair deep memory-circuit and mixed-signal design experience with a modern, open-source
+  silicon design flow — and a conviction that the quantum and superconducting-detector industry
+  deserves components, not just publications.</p>
+  <h2>Founder</h2>
+  <p>Alienonyx was founded by <strong>Ali Al-Shamma</strong>, an analog and mixed-signal
+  integrated-circuit designer with nearly three decades of experience across the memory and
+  semiconductor industry — including senior design roles at <strong>Intel, Western Digital, SanDisk,
+  AMD, and Matrix Semiconductor</strong>. His work spans sense amplifiers, data converters, precision
+  references, on-chip power and clock generation, and compute-in-memory and neuromorphic circuits,
+  and he has led <strong>test-chip IP design and first-silicon bring-up</strong>. He is a named
+  inventor on <strong>30+ U.S. patents</strong> in memory and mixed-signal design, has published at
+  <strong>ISSCC</strong>, and holds an MSc and BSc in Electrical Engineering from Santa Clara
+  University. Alienonyx&rsquo;s readout architecture is <strong>new and independently developed, and
+  patent-pending</strong>.</p>
 </div></main>
 
-<footer class="site"><div class="wrap">© 2026 Alienonyx — Energy-efficient compute-in-memory silicon for edge AI · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
+<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
 </body>
 </html>

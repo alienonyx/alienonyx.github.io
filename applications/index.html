@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Applications — Alienonyx</title>
-<meta name="description" content="On-device AI under tight energy budgets: always-on sensing, IoT and edge sensors, low-power vision, and embedded inference.">
+<meta name="description" content="Quantum communication, photonic quantum computing, astronomy, fundamental physics, and life-science imaging — where cold photons are counted.">
 <style>
 :root{--bg:#0b0e14;--panel:#121722;--text:#e6e8ec;--muted:#9aa4b2;--accent:#4fd1c5;--border:#232b3a;}
 *{box-sizing:border-box;}
@@ -20,13 +20,17 @@ nav.top a{color:var(--muted);margin-left:20px;font-size:.95rem;}
 nav.top a:hover,nav.top a[aria-current="page"]{color:var(--text);text-decoration:none;}
 main{padding:56px 0;}
 h1{font-size:2.2rem;line-height:1.2;margin:0 0 14px;}
-.lede{font-size:1.18rem;color:var(--muted);max-width:46rem;}
-ul.feat{list-style:none;padding:0;margin:20px 0 0;}
-ul.feat li{padding:14px 0;border-bottom:1px solid var(--border);}
-ul.feat li:last-child{border-bottom:none;}
-ul.feat li b{color:var(--text);}
+h2{font-size:1.4rem;margin:40px 0 12px;}
+.lede{font-size:1.18rem;color:var(--muted);max-width:44rem;}
+.hero{padding:40px 0 8px;}
+.hero h1{font-size:2.7rem;max-width:20ch;background:linear-gradient(180deg,#fff,#b9c2cf);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.btn{display:inline-block;margin-top:26px;background:var(--accent);color:#06231f;font-weight:600;padding:12px 24px;border-radius:8px;}
+.btn:hover{text-decoration:none;filter:brightness(1.08);}
+ul.feat{padding-left:1.2rem;}
+ul.feat li{margin:10px 0;}
+.note{color:var(--muted);font-style:italic;}
 footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:28px 0;margin-top:48px;}
-@media(max-width:560px){h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
+@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
 </style>
 </head>
 <body>
@@ -42,19 +46,22 @@ footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9re
 </div></header>
 
 <main><div class="wrap">
-  <h1>Intelligence at the edge, on a battery budget</h1>
-  <p class="lede">Alienonyx accelerators are built for AI that must run <b>on-device</b>, under tight
-  energy and cost constraints — where sending data to the cloud is too slow, too power-hungry, or
-  not private enough.</p>
-
+  <h1>Where cold photons are counted</h1>
+  <p class="lede">Superconducting nanowire single-photon detectors (SNSPDs) and their kin are the
+  highest-performance photon counters ever built — and every field that uses them is scaling to more
+  channels:</p>
   <ul class="feat">
-    <li><b>Always-on sensing</b> — keyword and event detection for wearables, hearables, and smart-home devices.</li>
-    <li><b>IoT &amp; edge sensors</b> — predictive maintenance, environmental and industrial monitoring.</li>
-    <li><b>Low-power vision</b> — presence and gesture detection, smart cameras, battery-powered imaging.</li>
-    <li><b>Embedded &amp; mobile inference</b> — any product where always-on intelligence must fit a milliwatt power budget.</li>
+    <li><strong>Quantum communication &amp; networking</strong> — QKD systems and quantum network nodes.</li>
+    <li><strong>Photonic quantum computing</strong> — photon-number-resolved detection at growing array sizes.</li>
+    <li><strong>Astronomy &amp; deep-space optical communication</strong> — kilopixel-class
+    superconducting cameras and photon-starved links.</li>
+    <li><strong>Fundamental physics</strong> — dark-matter searches, particle detection, precision timing.</li>
+    <li><strong>Life-science imaging</strong> — fluorescence lifetime imaging and other time-resolved methods.</li>
   </ul>
+  <p>In each, the readout electronics — not the detector — is becoming the constraint on channel
+  count, system cost, and cryogenic heat budget. That is the problem we build for.</p>
 </div></main>
 
-<footer class="site"><div class="wrap">© 2026 Alienonyx — Energy-efficient compute-in-memory silicon for edge AI · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
+<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
 </body>
 </html>
