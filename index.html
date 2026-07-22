@@ -3,8 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0e14">
 <title>Alienonyx — Cryogenic Analog & Mixed-Signal ASICs</title>
 <meta name="description" content="Alienonyx designs cryogenic analog and mixed-signal ASICs — starting with commercial integrated readout for superconducting single-photon detector arrays.">
+<link rel="canonical" href="https://alienonyx.com/">
+<meta property="og:title" content="Alienonyx — Cryogenic Analog & Mixed-Signal ASICs">
+<meta property="og:description" content="Alienonyx designs cryogenic analog and mixed-signal ASICs — starting with commercial integrated readout for superconducting single-photon detector arrays.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alienonyx.com/">
+<meta property="og:site_name" content="Alienonyx">
+<meta property="og:image" content="https://alienonyx.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Alienonyx, Inc.", "url": "https://alienonyx.com/", "founder": {"@type": "Person", "name": "Ali Al-Shamma"}, "description": "Alienonyx designs cryogenic analog and mixed-signal ASICs \u2014 starting with commercial integrated readout for superconducting single-photon detector arrays.", "email": "ali@alienonyx.com"}</script>
 <style>
 :root{--bg:#0b0e14;--panel:#121722;--text:#e6e8ec;--muted:#9aa4b2;--accent:#4fd1c5;--border:#232b3a;}
 *{box-sizing:border-box;}
@@ -12,11 +25,12 @@ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-syste
 a{color:var(--accent);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
-header.site{border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(11,14,20,.85);backdrop-filter:blur(8px);z-index:10;}
+header.site{border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(11,14,20,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:10;}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:16px;flex-wrap:wrap;}
 .brand{font-weight:700;letter-spacing:1px;color:var(--text);font-size:1.15rem;}
 .brand span{color:var(--accent);}
-nav.top a{color:var(--muted);margin-left:20px;font-size:.95rem;}
+nav.top{display:flex;flex-wrap:wrap;gap:8px 16px;}
+nav.top a{color:var(--muted);font-size:.95rem;padding:4px 2px;}
 nav.top a:hover,nav.top a[aria-current="page"]{color:var(--text);text-decoration:none;}
 main{padding:56px 0;}
 h1{font-size:2.2rem;line-height:1.2;margin:0 0 14px;}
@@ -29,38 +43,49 @@ h2{font-size:1.4rem;margin:40px 0 12px;}
 ul.feat{padding-left:1.2rem;}
 ul.feat li{margin:10px 0;}
 .note{color:var(--muted);font-style:italic;}
+.status{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:18px 22px;margin:36px 0 0;}
+.status strong{color:var(--accent);}
+.cta-line{margin-top:36px;color:var(--muted);}
+.contact-email{font-size:1.3rem;}
 footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:28px 0;margin-top:48px;}
-@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
+footer.site .privacy{display:block;margin-top:6px;font-size:.82rem;}
+@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}}
+@media print{body{background:#fff;color:#111;}a{color:#0a6e64;}header.site,footer.site{position:static;background:#fff;border-color:#ccc;}.hero h1{-webkit-text-fill-color:#111;color:#111;background:none;}.status{border-color:#ccc;background:#fff;}}
 </style>
 </head>
 <body>
 <header class="site"><div class="wrap">
-  <a class="brand" href="index.html">ALIEN<span>ONYX</span></a>
+  <a class="brand" href="/">ALIEN<span>ONYX</span></a>
   <nav class="top" aria-label="Primary">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="technology/index.html">Technology</a>
-    <a href="applications/index.html">Applications</a>
-    <a href="about/index.html">About</a>
-    <a href="contact/index.html">Contact</a>
+    <a href="/" aria-current="page">Home</a>
+    <a href="/technology/">Technology</a>
+    <a href="/applications/">Applications</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </div></header>
 
 <main><div class="wrap">
   <section class="hero">
-    <h1>Cryogenic silicon, built to be bought</h1>
+    <h1>Scale the array, not&nbsp;the&nbsp;wiring.</h1>
     <p class="lede">Alienonyx designs cryogenic analog and mixed-signal ASICs — starting with commercial integrated readout for superconducting single-photon detector arrays.</p>
-    <a class="btn" href="contact/index.html">Get in touch</a>
+    <a class="btn" href="/contact/">Get in touch</a>
   </section>
   <section>
     <p>Superconducting detectors and quantum hardware are scaling faster than the electronics that
     read them out. Every channel still costs coax lines to room temperature, a discrete amplifier
     chain, and a share of a hard 4&nbsp;K heat budget. Research ASICs have shown that integrated cold
     readout works — but a demonstration is not a component. Alienonyx exists to close that gap:
-    readout silicon you can actually design in, with a datasheet, guaranteed supply, and an engineer
-    behind it.</p>
+    readout silicon you can actually design in — a documented, supported, purchasable part with an
+    engineer behind it.</p>
+    <div class="status"><p style="margin:0"><strong>Where we are.</strong> Alienonyx is pre-silicon,
+    deliberately in the open. Our first test chip is planned on IHP&rsquo;s open shuttle, and v1
+    requirements are being set now — with design-in partners. Early partners shape the spec and get
+    first access, at no cost or commitment.</p></div>
   </section>
 </div></main>
 
-<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
+<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a>
+<span class="privacy">This site sets no cookies and runs no analytics.</span></div></footer>
 </body>
 </html>

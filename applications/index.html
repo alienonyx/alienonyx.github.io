@@ -3,8 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0e14">
 <title>Applications — Alienonyx</title>
 <meta name="description" content="Quantum communication, photonic quantum computing, astronomy, fundamental physics, and life-science imaging — where cold photons are counted.">
+<link rel="canonical" href="https://alienonyx.com/applications/">
+<meta property="og:title" content="Applications — Alienonyx">
+<meta property="og:description" content="Quantum communication, photonic quantum computing, astronomy, fundamental physics, and life-science imaging — where cold photons are counted.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alienonyx.com/applications/">
+<meta property="og:site_name" content="Alienonyx">
+<meta property="og:image" content="https://alienonyx.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
 :root{--bg:#0b0e14;--panel:#121722;--text:#e6e8ec;--muted:#9aa4b2;--accent:#4fd1c5;--border:#232b3a;}
 *{box-sizing:border-box;}
@@ -12,11 +24,12 @@ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-syste
 a{color:var(--accent);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
-header.site{border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(11,14,20,.85);backdrop-filter:blur(8px);z-index:10;}
+header.site{border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(11,14,20,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:10;}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:16px;flex-wrap:wrap;}
 .brand{font-weight:700;letter-spacing:1px;color:var(--text);font-size:1.15rem;}
 .brand span{color:var(--accent);}
-nav.top a{color:var(--muted);margin-left:20px;font-size:.95rem;}
+nav.top{display:flex;flex-wrap:wrap;gap:8px 16px;}
+nav.top a{color:var(--muted);font-size:.95rem;padding:4px 2px;}
 nav.top a:hover,nav.top a[aria-current="page"]{color:var(--text);text-decoration:none;}
 main{padding:56px 0;}
 h1{font-size:2.2rem;line-height:1.2;margin:0 0 14px;}
@@ -29,39 +42,49 @@ h2{font-size:1.4rem;margin:40px 0 12px;}
 ul.feat{padding-left:1.2rem;}
 ul.feat li{margin:10px 0;}
 .note{color:var(--muted);font-style:italic;}
+.status{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:18px 22px;margin:36px 0 0;}
+.status strong{color:var(--accent);}
+.cta-line{margin-top:36px;color:var(--muted);}
+.contact-email{font-size:1.3rem;}
 footer.site{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:28px 0;margin-top:48px;}
-@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}nav.top a{margin-left:14px;}}
+footer.site .privacy{display:block;margin-top:6px;font-size:.82rem;}
+@media(max-width:560px){.hero h1{font-size:2rem;}h1{font-size:1.7rem;}}
+@media print{body{background:#fff;color:#111;}a{color:#0a6e64;}header.site,footer.site{position:static;background:#fff;border-color:#ccc;}.hero h1{-webkit-text-fill-color:#111;color:#111;background:none;}.status{border-color:#ccc;background:#fff;}}
 </style>
 </head>
 <body>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../index.html">ALIEN<span>ONYX</span></a>
+  <a class="brand" href="/">ALIEN<span>ONYX</span></a>
   <nav class="top" aria-label="Primary">
-    <a href="../index.html">Home</a>
-    <a href="../technology/index.html">Technology</a>
-    <a href="../applications/index.html" aria-current="page">Applications</a>
-    <a href="../about/index.html">About</a>
-    <a href="../contact/index.html">Contact</a>
+    <a href="/">Home</a>
+    <a href="/technology/">Technology</a>
+    <a href="/applications/" aria-current="page">Applications</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </div></header>
 
 <main><div class="wrap">
   <h1>Where cold photons are counted</h1>
-  <p class="lede">Superconducting nanowire single-photon detectors (SNSPDs) and their kin are the
-  highest-performance photon counters ever built — and every field that uses them is scaling to more
-  channels:</p>
+  <p class="lede">Superconducting nanowire single-photon detectors (SNSPDs) and related
+  superconducting detectors are the highest-performance photon counters ever built — and every
+  field that uses them is scaling to more channels:</p>
   <ul class="feat">
-    <li><strong>Quantum communication &amp; networking</strong> — QKD systems and quantum network nodes.</li>
-    <li><strong>Photonic quantum computing</strong> — photon-number-resolved detection at growing array sizes.</li>
+    <li><strong>Quantum communication &amp; networking</strong> — multi-user QKD and quantum network
+    nodes multiply detector counts per node.</li>
+    <li><strong>Photonic quantum computing</strong> — photon-number resolution is won by
+    multiplexing, which means many detectors per optical mode.</li>
     <li><strong>Astronomy &amp; deep-space optical communication</strong> — kilopixel-class
     superconducting cameras and photon-starved links.</li>
     <li><strong>Fundamental physics</strong> — dark-matter searches, particle detection, precision timing.</li>
     <li><strong>Life-science imaging</strong> — fluorescence lifetime imaging and other time-resolved methods.</li>
   </ul>
-  <p>In each, the readout electronics — not the detector — is becoming the constraint on channel
-  count, system cost, and cryogenic heat budget. That is the problem we build for.</p>
+  <p>In each, the readout — not the detector — is becoming the constraint on channel count, system
+  cost, and cryogenic heat budget. That is the problem we build for.</p>
+  <p class="cta-line">Scaling past a coax per channel? <a href="/contact/">Get in touch.</a></p>
 </div></main>
 
-<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a></div></footer>
+<footer class="site"><div class="wrap">© 2026 Alienonyx, Inc. — Cryogenic analog and mixed-signal ASICs · <a href="mailto:ali@alienonyx.com">ali@alienonyx.com</a>
+<span class="privacy">This site sets no cookies and runs no analytics.</span></div></footer>
 </body>
 </html>
